@@ -1,0 +1,6 @@
+/.DS_Store
+/.claude
+/.dockerignore
+/.env.example
+/.next
+node_modules

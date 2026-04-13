@@ -1,0 +1,16 @@
+services:
+  dimasikvpn-web:
+    build: .
+    container_name: dimasikvpn-web
+    hostname: dimasikvpn-web
+    restart: always
+    ports:
+      - '127.0.0.1:3020:3020'
+    env_file:
+      - .env
+    networks:
+      - remnawave-network
+
+networks:
+  remnawave-network:
+    external: true
