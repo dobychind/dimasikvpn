@@ -385,6 +385,8 @@ export default function Home() {
         subscriptionUrl: data.user.subscriptionUrl,
         message: data.message,
       })
+
+      window.location.href = data.user.subscriptionUrl
     } catch {
       setError('Не удалось подключиться к серверу')
     } finally {
